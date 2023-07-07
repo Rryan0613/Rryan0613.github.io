@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="sample.webp" alt="">
+                <img src="Ryan1.png" alt="">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
@@ -105,6 +105,27 @@
     </div>
 </div>
 
+
+<!----------------Portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="portfolio-list">
+            <div class="portfolio">
+                <img src="Spam.png" alt="">
+            </div>
+
+            <div class="portfolio">
+                <img src="Chat.png" alt="">
+            </div>
+
+            <div class="portfolio">
+                <img src="rock-paper-scissors.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
     var tablinks = document.getElementsByClassName("tab-links")
     var tabcontents = document.getElementsByClassName("tab-contents")
@@ -112,9 +133,11 @@
         for (tablink of tablinks){
             tablink.classList.remove("active-link");
         }
+
         for (tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
         }
+
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
