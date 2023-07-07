@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
@@ -37,14 +38,86 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>asdasdadwdasdwdasddwdddadwddwdadwdawdawdwdasdawdsawdsa</p>
+2
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>CSS</span><br>Web Design/Development</li>
+                        <li><span>HTML</span><br>Web Design/Development</li>
+                        <li><span>JavaScript</span><br>Web App Development</li>
+                        <li><span>Java</span><br>RESTful API and Object Oriented Programming</li>
+                        <li><span>Python</span><br>Object Oriented Programming</li>
+                        <li><span>C++</span><br>Web Design/Development</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>University of Ontario Technology Institution Bachelors of Computer Science| 2021-present</span><br>Entrance Scholarship from Ontario Tech University</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>Computer Solutions Associate, Best Buy | 4/2022 – current</span>
+                        <li>Provided help to customers with technical issues on their computing devices and faced challenges regarding the customers issues.</li>
+                        <li>I possess in-depth expertise in technology and gadgets and can effectively communicate detailed information about their features.</li>
+                        <li>Gained knowledge about computer specifications to provide customers with recommendations on which product or services they desired.</li>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------SERVICES----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>WORK IN PROGRESS</h2>
+                <p>Currently a Work in Progress</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>WORK IN PROGRESS</h2>
+                <p>Currently a Work in Progress</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>WORK IN PROGRESS</h2>
+                <p>Currently a Work in Progress</p>
+                <a href="#">Learn More</a>
             </div>
         </div>
     </div>
 </div>
 
-
-
-
-
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 </body>
 </html>
