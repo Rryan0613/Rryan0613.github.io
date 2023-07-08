@@ -251,6 +251,11 @@ tab-links::after{
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.layer p{
+    font-size: 12px;
 }
 
 .layer a{
