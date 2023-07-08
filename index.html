@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,183 +8,213 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/rl-logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>Computer Science</p>
-            <h1>Hello, I'm <span>Ryan</span> Liu from the <br> University of Ontario Institute of Technology</h1>
-        </div>
-    </div>
-<!--</div>    ADD THIS BACK IF IT MESSES THE REST OF THE WEBSITE UP AND REMOVE THE ENDING DIV TAG AT THE END OF THE CODE-->
-<!-- -----------ABOUT------------- -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/Ryan1.jpeg" alt="">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>asdasdadwdasdwdasddwdddadwddwdadwdawdawdwdasdawdsawdsa</p>
-2
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                </div>
-
-                <div class="tab-contents" id="skills">
+    <div id="background">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/rl-logo.png" class="logo">
                     <ul>
-                        <li><span>CSS</span><br>Web Design/Development</li>
-                        <li><span>HTML</span><br>Web Design/Development</li>
-                        <li><span>JavaScript</span><br>Web App Development</li>
-                        <li><span>Java</span><br>RESTful API and Object Oriented Programming</li>
-                        <li><span>Python</span><br>Object Oriented Programming</li>
-                        <li><span>C++</span><br>Web Design/Development</li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
-                </div>
-
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>University of Ontario Technology Institution Bachelors of Computer Science| 2021-present</span><br>Entrance Scholarship from Ontario Tech University</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents active-tab" id="experience">
-                    <ul>
-                        <li><span>Computer Solutions Associate, Best Buy | 4/2022 – current</span>
-                        <li>Provided help to customers with technical issues on their computing devices and faced challenges regarding the customers issues.</li>
-                        <li>I possess in-depth expertise in technology and gadgets and can effectively communicate detailed information about their features.</li>
-                        <li>Gained knowledge about computer specifications to provide customers with recommendations on which product or services they desired.</li>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-<!----------------SERVICES----------------->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fas fa-code"></i>
-                <h2>WORK IN PROGRESS</h2>
-                <p>Currently a Work in Progress</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <div>
-                <i class="fas fa-code"></i>
-                <h2>WORK IN PROGRESS</h2>
-                <p>Currently a Work in Progress</p>
-                <a href="#">Learn More</a>
-            </div>
-
-            <div>
-                <i class="fas fa-code"></i>
-                <h2>WORK IN PROGRESS</h2>
-                <p>Currently a Work in Progress</p>
-                <a href="#">Learn More</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!----------------Portfolio----------------->
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Portfolio</h1>
-        <div class="portfolio-list">
-            <div class="portfolio">
-                <img src="images/Spams.png" alt="">
-                <div class="layer">
-                    <h3>Spam Detector</h3>
-                    <p>asdasdasdasdasdasdasdasdasdasdasdasd</p>
-                    <a href="#"><i class ="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio">
-                <img src="images/chats.png" alt="">
-                <div class="layer">
-                    <h3>Live Chat Server</h3>
-                    <p>asdasdasdasdasdasdasdasdasdasdasdasd</p>
-                    <a href="#"><i class ="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio">
-                <img src="images/rock-paper-scissor.png" alt="">
-                <div class="layer">
-                    <h3>Rock Paper Scissors</h3>
-                    <p>asdasdasdasdasdasdasdasdasdasdasdasd</p>
-                    <a href="#"><i class ="fas fa-external-link-alt"></i></a>
+                </nav>
+                <div class="header-text">
+                    <p>Computer Science</p>
+                    <h1>Hello, I'm <span>Ryan</span> Liu from the <br> University of Ontario Institute of Technology
+                    </h1>
                 </div>
             </div>
         </div>
-        <a href="#" class ="btn">See More</a>
-    </div>
-</div>
-<!-------------------CONTACT------------    -->
-    <div id="contact">
-        <div class="contrainer">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i> ryan.liu1@ontariotechu.net</p>
-                    <p><i class="fas fa-phone-square-alt"></i>289-879-5697</p>
-                    <div class="social-icons">
-                        <a href="https://github.com/Rryan0613"><i class="fa-brands fa-github fa-lg"></i></a>
-                        <a href="https://www.linkedin.com/in/ryan-liu-801a30277/"><i class="fa-brands fa-linkedin"></i></a>
+        <!--ADD THIS BACK IF IT MESSES THE REST OF THE WEBSITE UP AND REMOVE THE ENDING DIV TAG AT THE END OF THE CODE-->
+        <!-- -----------ABOUT------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/Ryan1.jpeg" alt="">
                     </div>
-                    <a href="" class="btn btn2">Download Resume</a>
-                </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>asdasdadwdasdwdasddwdddadwddwdadwdawdawdwdasdawdsawdsa</p>
+                        2
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>CSS</span><br>Web Design/Development</li>
+                                <li><span>HTML</span><br>Web Design/Development</li>
+                                <li><span>JavaScript</span><br>Web App Development</li>
+                                <li><span>Java</span><br>RESTful API and Object Oriented Programming</li>
+                                <li><span>Python</span><br>Object Oriented Programming</li>
+                                <li><span>C++</span><br>Web Design/Development</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>University of Ontario Technology Institution Bachelors of Computer Science|
+                                        2021-present</span><br>Entrance Scholarship from Ontario Tech University</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="experience">
+                            <ul>
+                                <li><span>Computer Solutions Associate, Best Buy | 4/2022 – current</span>
+                                <li>Provided help to customers with technical issues on their computing devices and
+                                    faced challenges regarding the customers issues.</li>
+                                <li>I possess in-depth expertise in technology and gadgets and can effectively
+                                    communicate detailed information about their features.</li>
+                                <li>Gained knowledge about computer specifications to provide customers with
+                                    recommendations on which product or services they desired.</li>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
+        <!----------------SERVICES----------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>WORK IN PROGRESS</h2>
+                        <p>Currently a Work in Progress</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>WORK IN PROGRESS</h2>
+                        <p>Currently a Work in Progress</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-code"></i>
+                        <h2>WORK IN PROGRESS</h2>
+                        <p>Currently a Work in Progress</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!----------------Portfolio----------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Portfolio</h1>
+                <div class="portfolio-list">
+                    <div class="portfolio">
+                        <img src="images/Spams.png" alt="">
+                        <div class="layer">
+                            <h3>Spam Detector</h3>
+                            <p>asdasdasdasdasdasdasdasdasdasdasdasd</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio">
+                        <img src="images/chats.png" alt="">
+                        <div class="layer">
+                            <h3>Live Chat Server</h3>
+                            <p>asdasdasdasdasdasdasdasdasdasdasdasd</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio">
+                        <img src="images/rock-paper-scissor.png" alt="">
+                        <div class="layer">
+                            <h3>Rock Paper Scissors</h3>
+                            <p>asdasdasdasdasdasdasdasdasdasdasdasd</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-------------------CONTACT------------    -->
+        <div id="contact">
+            <div class="contrainer">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i> ryan.liu1@ontariotechu.net</p>
+                        <p><i class="fas fa-phone-square-alt"></i>289-879-5697</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Rryan0613"><i class="fa-brands fa-github fa-lg"></i></a>
+                            <a href="https://www.linkedin.com/in/ryan-liu-801a30277/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="Files/Ryan_Liu_Resume.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Ryan Liu from The University of Ontario Institute of Technology</p>
+            </div>
+        </div>
     </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
 
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
 
-
-</div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
-    function opentab(tabname){
-        for (tablink of tablinks){
-            tablink.classList.remove("active-link");
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
+    </script>
 
-        for (tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysOPOWhIksnbFv_XBc3hSxUmS3GOqijC2K7fSgaqE7eT8wXf8vaDvlOuXqwVMnT1Py2g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully! I will get back to you as soon as I can!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
 </body>
+
 </html>
