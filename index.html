@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaQuery.css"/>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+      <div class="logo">Ryan Liu</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ryan Liu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Ryan Liu</h1>
+            <p class="section_text_p2">3rd year Computer Science Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color2" onclick="window.open('./Files/Ryan_Liu_Resume.pdf')">Download CV</button>
+                <button class="btn btn-color1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./Files/linkedin.png" alt="linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ryan-liu-801a30277/'">
+                <img src="./Files/github.png" alt="github profile" class="icon" onclick="location.href='https://github.com/Rryan0613'">
+            </div>
+        </div>
+        <div class="section_pic-container">
+            <img src="./Files/Ryan.png" alt="ryan liu profile picture">
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section_pic-container">
+            <img
+              src="./Files/AboutMe.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+
+            <div class="details-container1">
+                <img src="./Files/experience.jpeg" alt="Experience icon" class="icon"/>
+                <h3>Experience</h3>
+                <p>1 Year <br />Computer Systems Analyst / IT Co-op <br> w/ Canadian Musicians Co-operative</p>
+                <div class="layer">
+                    <p>
+                        Developed and maintained membership frontend functionalities for user account creation, membership, and auto-renewal reminders. 
+                        <br><br> 
+                        Designed visually appealing and user-friendly webpages using HTML and CSS for the home page, artist page, and others with ONVIVA. 
+                        <br> <br> 
+                        Managed Google Workspace drives, ensuring data organization, accessibility, and resolving technical issues.
+                    </p>
+                </div>
+            </div>
+              <div class="details-container">
+                <img
+                  src="./Files/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>University of Ontario Institute of Technology <br>B.Sc. Bachelors Degree<br>09/2021 – Expected 05/2025 <br></p>
+                
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                I am currently enrolled in Computer Science at The University of Ontario Institute of Technology. I seek challenges to enhance my Software Development and Data Analysis skills, my goal is to contribute my expertise to an organization that can see a fit for me on their team. Currently, I'm actively seeking opportunities to further develop my skills and gain practical experience in the industry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./Files/downarrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+      <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <article>
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <div>
+                    <h3>C</h3>
+                    <p>Expereienced</p>
+                  </div>
+                </article>
+                <article>
+                    <div>
+                      <h3>C++</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                <article>
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                    <div>
+                      <h3>Java</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                <article>
+                    <div>
+                      <h3>Python</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+                <article>
+                  <div>
+                    <h3>Dart</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                    <div>
+                      <h3>AWS</h3>
+                      <p>Studying</p>
+                    </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./Files/downarrow.png"
+          alt="Arrow icon"
+          class="arrow1 icon1"
+          onclick="location.href='./#projects'"/>
+      </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./Files/Project11.png"
+                  alt="Project 1"
+                  class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Auto+</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Rryan0613/AutoApp'">
+                  Github
+                </button>
+                <!-- <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'">
+                  Live Demo
+                </button> -->
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./Files/Project22.png"
+                  alt="Project 2"
+                  class="project-img1"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Rryan0613/InteractiveChatRoom'">
+                  Github
+                </button>
+                <!-- <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'">
+                  Live Demo
+                </button> -->
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./Files/Project3.png"
+                  alt="Project 3"
+                  class="project-img"/>
+              </div>
+              <h2 class="experience-sub-title project-title">Work In Progress</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'">
+                  Github
+                </button>
+                <!-- <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'">
+                  Live Demo
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./Files/downarrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"/>
+      </section>
+      <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./Files/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"/>
+            <p><a href="mailto:Ryliu.0613@gmail.com">Ryliu.0613@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./Files/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"/>
+            <p><a href="https://www.linkedin.com/in/ryan-liu-801a30277/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </footer>
+      <script src="script.js"></script>
+</body>
+</html>
