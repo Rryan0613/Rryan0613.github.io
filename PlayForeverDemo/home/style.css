@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*=============navbar start=================*/
+body{
+font-family: "Montserrat", sans-serif;
+}
+nav{
+  background-color: #000;
+}
+ .navbar-nav .active>.nav-link{
+	font-weight: 600;
+	color: #81D052 !important;
+}
+
+.navbar-nav .nav-item .nav-link{
+	color: white;
+	font-weight: 500;
+    font-size: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 0px;
+}
+
+.navbar-nav .nav-item {
+    font-weight: 600;
+    border-left: 2px solid #FEC547;
+}
+
+.email-input::placeholder {
+  color: white;
+  opacity: 1; /* Overriding the default slight transparency of placeholders */
+}
+
+
+  .logo-narrow {
+    width: 100px;
+  }
+  .nav-menu-btn{
+    width: 60px;
+  }
+  
+.nav-bar-icon{
+  width: 177px;  /* keep width proportional to height */
+  height: auto;
+}
+
+.btn-primary{
+  background-color: #FEC547;
+  border:none;
+  box-shadow:none !important;
+}
+
+.btn-primary1{
+    background-color: #2b2b2b;
+    border:none;
+    box-shadow:none !important;
+  }
+
+.btn-primary:hover{
+  background-color: #FEC547;
+  border:none;
+  box-shadow:none !important;
+}
+.text-primary{
+  color: #FEC547 !important;
+}
+.bg-primary{
+  background: #FEC547 !important;
+}
+
+.bg-primary{
+  background-color: #F2B644;
+}
+
+.home-second-section{
+  position: relative;
+}
+
+.home-second-section .title_heading{
+  position: absolute;
+  top: 0px;
+}
+
+.bg-gray{
+  background-color: #2b2b2b;
+}
+
+.home-third-section{
+background-color: #FFDC8E;
+text-align: center;
+border-radius: 5px;
+padding: 10px;
+}
+
+.home-third-section img{
+  width: 100%;
+}
+
+.bg-primary-light{
+  background-color: #FFDC8E !important;
+}
+
+.text-primary-light{
+  color:#FFDC8E !important ;
+}
+
+.title_heading_contact{
+  position: relative;
+  bottom: 48px;
+}
+
+.fa-5x{
+  font-size: 130px !important;
+}
+
+.contact_side_section{
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #FEC547 !important; /* This sets the text color to yellow */
+}
+
+/*=============additional navbar styles for subscription form=================*/
+.subscription-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 68px;
+  background-color: #2b2b2b;
+  position: relative;
+}
+
+.subscription-text {
+    color: white;
+    margin-right: auto; 
+    padding-left: 15px;
+    font-size: 0.8em; /* Made the font smaller */
+  }
+
+  .email-input {
+    margin: 0px 15px; /* Spacing on both sides */
+    flex-grow: 2; /* Allow input to fill up space */
+    border: 1px solid #FEC547; /* Border color */
+    background-color: #2b2b2b; /* Background color */
+    color: white; /* Text color */
+    padding: 7px 10px; /* Add padding inside the input box */
+    flex-basis: 400px; /* Starts at 0 width and grows */
+    border-radius: 8px; /* This will create rounded corners */
+  }
+  
+  
+  /* If the above changes do not make the input long enough, you can set a minimum width */
+  .email-input {
+    min-width: 300px; /* Adjust this value as needed */
+  }
+
+.sign-up,
+.close-updates {
+  background-color: #FEC547;
+  border: none;
+  font-size: 16px;
+  font-weight: 550;
+  padding: 10px 45px;
+  margin-left: 15px; /* Small space between buttons and input field */
+  margin-right: -15px;
+}
+  
+
+
+/* Hide elements by default */
+.d-none {
+  display: none !important;
+}
+
+/* When the navbar is collapsed show the subscription form */
+.nav-collapsed .subscription-form {
+  display: flex;
+}
+
+/* Hide other nav items when collapsed */
+.nav-collapsed .navbar-nav {
+  display: none;
+}
+
+@media (max-width: 767px) {
+    .subscription-text br {
+      display: none; /* Hide <br> by default */
+    }
+    .subscription-text {
+      white-space: pre-wrap; /* This will allow us to use '\n' in the text to create a new line */
+    }
+  }
+
+/* Other responsive adjustments as needed */

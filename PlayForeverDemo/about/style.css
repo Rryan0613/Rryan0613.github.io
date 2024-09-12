@@ -1,0 +1,812 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*=============navbar start=================*/
+body{
+font-family: "Montserrat", sans-serif;
+}
+nav{
+  background-color: #000;
+}
+ .navbar-nav .active>.nav-link{
+	font-weight: 600;
+	color: #81D052 !important;
+}
+
+.navbar-nav .nav-item .nav-link{
+	color: white;
+	font-weight: 500;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 0px;
+}
+
+.navbar-nav .nav-item {
+    font-weight: 600;
+    border-left: 2px solid #FEC547;
+}
+
+.email-input::placeholder {
+  color: white;
+  opacity: 1; /* Overriding the default slight transparency of placeholders */
+}
+
+
+  .logo-narrow {
+    width: 100px;
+  }
+  .nav-menu-btn{
+    width: 60px;
+  }
+  
+.nav-bar-icon{
+  width: 177px;  /* keep width proportional to height */
+  height: auto;
+}
+
+.btn-primary{
+  background-color: #FEC547;
+  border:none;
+  box-shadow:none !important;
+}
+
+.btn-primary1{
+    background-color: #2b2b2b;
+    border:none;
+    box-shadow:none !important;
+  }
+
+.btn-primary:hover{
+  background-color: #FEC547;
+  border:none;
+  box-shadow:none !important;
+}
+
+
+.title_heading_contact{
+  position: relative;
+  bottom: 48px;
+}
+
+.fa-5x{
+  font-size: 130px !important;
+}
+
+.contact_side_section{
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #FEC547 !important; /* This sets the text color to yellow */
+}
+
+/*=============additional navbar styles for subscription form=================*/
+.subscription-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 68px;
+  background-color: #2b2b2b;
+  position: relative;
+}
+
+.subscription-text {
+    color: white;
+    margin-right: auto; 
+    padding-left: 15px;
+    font-size: 0.8em; /* Made the font smaller */
+  }
+
+  .email-input {
+    margin: 0px 15px; /* Spacing on both sides */
+    flex-grow: 2; /* Allow input to fill up space */
+    border: 1px solid #FEC547; /* Border color */
+    background-color: #2b2b2b; /* Background color */
+    color: white; /* Text color */
+    padding: 7px 10px; /* Add padding inside the input box */
+    flex-basis: 400px; /* Starts at 0 width and grows */
+    border-radius: 8px; /* This will create rounded corners */
+  }
+  
+  
+  /* If the above changes do not make the input long enough, you can set a minimum width */
+  .email-input {
+    min-width: 300px; /* Adjust this value as needed */
+  }
+
+.sign-up,
+.close-updates {
+  background-color: #FEC547;
+  border: none;
+  font-size: 16px;
+  font-weight: 550;
+  padding: 10px 20px;
+  margin-left: 15px; /* Small space between buttons and input field */
+  margin-right: -15px;
+}
+  
+
+
+/* Hide elements by default */
+.d-none {
+  display: none !important;
+}
+
+/* When the navbar is collapsed show the subscription form */
+.nav-collapsed .subscription-form {
+  display: flex;
+}
+
+/* Hide other nav items when collapsed */
+.nav-collapsed .navbar-nav {
+  display: none;
+}
+
+@media (max-width: 767px) {
+    .subscription-text br {
+      display: none; /* Hide <br> by default */
+    }
+    .subscription-text {
+      white-space: pre-wrap; /* This will allow us to use '\n' in the text to create a new line */
+    }
+  }
+
+/* Other responsive adjustments as needed */
+
+
+
+/* about css */
+
+.aboutus {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 696px;
+}
+.director {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 92px;
+    top: 2571px;
+}
+
+.title1 svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 794px;
+}
+  
+  .border1 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 794px;
+    width: 1440px;
+}
+.title2 svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 1103px;
+}
+  
+  .border2 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 1103px;
+    width: 1380px;
+}
+.title3 svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 1600px;
+}
+  
+  .border3 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 1600px;
+    width: 1370px;
+}
+.title4 svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 2145px;
+}
+  
+  .border4 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 2145px;
+    width: 1340px;
+}
+.title5 svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 2768px;
+}
+  
+  .border5 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: -500px;
+    margin-right: auto;
+    position: absolute;
+    top: 2768px;
+    width: 1220px;
+}
+
+
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    width: 1440px; /* Fixed width of the main content area */
+    margin: 0 auto; /* Centers the layout on larger screens */
+    overflow-x: hidden; /* Hides horizontal overflow, preventing horizontal scroll on smaller screens */
+}
+
+
+
+/* About Us Section Styling */
+.image-container {
+    max-width: 100%;
+    margin: 0; /* Ensure there's no margin causing space */
+    padding: 0; /* Ensure there's no padding causing space */
+    overflow: hidden; /* Ensures no scrollbars are added */
+  }
+
+  .about-image {
+    display: block;
+    width: 100%;
+    height: 740px;
+    object-fit: fill;
+    margin: 0;
+}
+
+.about-us-container {
+    text-align: center;
+    padding: 0px;
+    background-color: #f2f2f2; /* Light grey background */
+}
+
+.about-us-content h2 {
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 30px;
+}
+
+/* Mission & Vision Section Styling */
+
+.image-container img {
+    width: 100%; /* This makes sure the image is as wide as its container */
+    height: 100%; /* This makes the image as tall as its container */
+    object-fit: fill; /* This makes the image cover the container completely */
+  }
+  
+
+.mission-container {
+    background-image: url('../images/aboutBanner1.png'); /* Replace with the actual path to your background image */
+    background-size: fill;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 87px 0; /* Adjust padding to ensure content is centered */
+}
+
+.mission-content {
+    color: black; /* Text color */
+    padding: 0 20px;
+    border-radius: 10px; /* Add rounded corners */
+    text-align: left;
+}
+
+
+.mission-content p {
+    font-size: 18px; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for paragraph readability */
+    margin-bottom: 10px; /* Space below each paragraph */
+    width: 60%;
+    margin-right: 70px;
+
+}
+
+/* Values Section Styling */
+.value-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures space distribution inside the card */
+    align-items: center;
+    width: 240px; /* Fixed width for all cards */
+    height: 180px; /* Adjust height if needed */
+    background-color: #FFDC8E; /* Yellow background color */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between the card and the description */
+}
+
+.value-title-bg {
+    width: 100%; /* Ensures full width of the container */
+    height: 50px; /* Fixed height for uniformity */
+    background-color: #464646; /* Black background */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: #F2B544; /* Text color */
+    padding: 10px 0; /* Padding top and bottom */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px; /* Consistent with card width */
+}
+
+.values-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Ensures all items align at the top */
+    gap: 20px; /* Spacing between cards */
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+  
+.value-icon-bg {
+    width: 150px; /* Adjusted icon container size */
+    height: 100px; /* Adjusted icon container size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px; /* Top margin for spacing */
+}
+  
+.value-icon {
+    width: 100%; /* Icon takes full container width */
+    height: auto; /* Maintain aspect ratio */
+}
+  
+.value-title {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+  
+.value-description {
+    width: 240px; /* Match the card width */
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #000000;
+    padding: 0px; /* Padding for text */
+}
+  
+/* Our Story Section Styling */
+.our-story-container {
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: space-between; /* Space between text and image */
+    background-color: #FEC547; /* Light grey background */
+    padding: 70px; /* Padding around the content */
+    margin-bottom: 0;
+  }
+  
+  .our-story-text {
+    flex-basis: 50%; /* Takes up half the container */
+    padding-right: 50px; /* Adds some space between the text and the image */
+  }
+  
+  
+  .our-story-text p {
+    font-size: 18px; /* Font size for the paragraph */
+    line-height: 1.2; /* Line height for paragraph readability */
+    color: #333; /* Dark grey color for the text */
+    text-align: left;
+    margin-right: 45px;
+    padding-right: 40px;
+  }
+  
+  .our-story-image {
+    flex-basis: 50%; /* Takes up half the container */
+  }
+  
+  .our-story-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 600px;
+    border-radius: 10px;
+    padding-right: 100px;
+}
+  
+  /* You can keep the rest of your existing styles unchanged */
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .our-story-container {
+      flex-direction: column; /* Stack the text and image on top of each other */
+    }
+  
+    .our-story-text, .our-story-image {
+      flex-basis: 100%; /* Each takes full width of the container */
+    }
+  
+    .our-story-text {
+      padding-right: 0; /* Removes the padding on the right for the text */
+    }
+  
+    .our-story-image img {
+      max-width: 100%; /* Image takes full width of the container */
+    }
+  }
+  
+/* The Founder Section Styling */
+.founder-section {
+    display: flex;
+    background-color: #FFEDC4; /* Yellow background color */
+    padding: 100px;
+    align-items: center;
+    justify-content: space-between; /* Spacing between image and text */
+    /* margin-top: 0; */
+    /* padding-top: 0; */
+  }
+  
+  .founder-image {
+    flex-basis: 45%; /* Adjust the width as necessary */
+    padding-right: 100px; /* Space between the image and the text */
+  }
+  
+  .founder-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 400px;
+    border-radius: 10px;
+}
+  
+  .founder-text {
+    flex-basis: 100%; /* Adjust the width as necessary */
+  }
+  
+  .founder-text p {
+    font-size: 18px;
+    line-height: 1.3;
+    color: #333; /* Adjust color as necessary */
+    text-align: left;
+    margin-right: 0px;
+  }
+  
+  @media (max-width: 768px) {
+    .founder-section {
+      flex-direction: column-reverse; /* Image will be above the text */
+      text-align: center;
+    }
+  
+    .founder-image, .founder-text {
+      flex-basis: 100%; /* Full width on smaller screens */
+      padding-right: 0; /* Reset padding */
+      padding-left: 0; /* Reset padding */
+    }
+  
+    .founder-image img {
+      max-width: 100%; /* Full width of the container */
+    }
+  }
+  
+  /* Leadership Section Styling */
+  .leadership-section {
+    background-color: #FFF; /* Change the background color as needed */
+    padding: 60px; /* Adjust padding */
+    text-align: center; /* Center aligning the text */
+  }
+  
+  .leadership-section h2 {
+    font-size: 2rem; /* Size of the section title */
+    color: #000; /* Color of the section title */
+    margin-bottom: 20px; /* Space below the section title */
+  }
+  
+  .leadership-section p {
+    font-size: 14px; /* Size of the section paragraph */
+    margin-bottom: 40px; /* Space below the section paragraph */
+  }
+  
+  .leadership-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 0fr));
+    gap: 5px; /* Reduced gap for bringing cards closer */
+    justify-content: center; /* This will center the cards in the grid if there's extra space */
+    align-items: center;
+  }
+  
+  .leadership-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Optional: Set a max-width if the cards are too wide */
+    max-width: 300px; /* Adjust this value as needed to bring cards closer */
+  }
+  
+  .leadership-member img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 400px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    margin-left: -50px;
+}
+  
+  .leadership-member h3 {
+    font-size: 1.2rem; /* Size of the member name */
+    color: #000; /* Color of the member name */
+    margin-bottom: 5px; /* Space below the member name */
+    margin-left: -150px;
+  }
+  
+  .leadership-member p {
+    font-size: 16px; /* Size of the member role */
+    color: #666; /* Color of the member role */
+    margin-left: -150px;
+  }
+  .contact-us-button {
+    background-color: #F2B544; /* Button color */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-left: -50px;
+  }
+  
+  .contact-us-button:hover {
+    background-color: #F2B544; /* Darker on hover */
+  }
+  
+  .about-us-container, .mission-container, .values-section, .our-story-container, .founder-section, .leadership-section {
+    width: 100%; /* Adjust width to always fit within the body element */
+    max-width: 1440px; /* Maximum width to align with the body */
+    margin: 0 auto; /* Center align if needed */
+}
+
+  .footer {
+    clear: both;
+    background: #2B2B2B;
+    margin-top: 0;
+    color: #fff;
+    padding: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  
+  .footer .info p{
+    font-family:  sans-serif;
+    margin-left: 100px;
+  }
+  
+  .footer .social-icon {
+    padding-right: 0;
+  }
+  
+  .footer i {
+    font-size: 70px;
+    color: #FFEDC4;
+    margin-left: 50px;
+  }
+  
+  .footer .email-sign form .form-box button {
+    font-family:sans-serif;
+    margin-top: 15px;
+    background-color: #F2B544;
+    color: #000000;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .footer .email-sign form .form-box input[type="text"] {
+    font-family: sans-serif;
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color:#2B2B2B;
+    border-radius: 5px;
+    border-color: #fff;
+    color: #fff;
+  }
+/* Media Queries */
+
+/* Medium Devices (Tablets, 768px and above) */
+@media (max-width: 1024px) {
+  /* Adjust navigation */
+  .navbar-nav .nav-link {
+      font-size: 14px;
+      padding: 8px 20px;
+  }
+  
+  /* Subscription form */
+  .subscription-form {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 10px;
+  }
+  
+  .subscription-text {
+      text-align: center;
+      padding-bottom: 10px;
+  }
+
+  .email-input {
+      margin: 10px 0;
+      width: 100%;
+  }
+
+  .sign-up, .close-updates {
+      margin: 10px auto;
+  }
+
+  /* About Section Adjustments */
+  .aboutus, .director, .title1 svg, .title2 svg, .title3 svg, .title4 svg, .title5 svg {
+      width: 100%;
+      margin-top: 20px;
+  }
+  
+  /* Mission Section */
+  .mission-container {
+      padding: 40px 20px;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .mission-content {
+      max-width: 80%;
+      text-align: left;
+  }
+
+  /* Our Story Section */
+  .our-story-container {
+      flex-direction: column;
+      padding: 40px 20px;
+  }
+
+  .our-story-text, .our-story-image {
+      flex-basis: 100%;
+  }
+
+  /* Leadership Section */
+  .leadership-members {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+  }
+
+  .leadership-member img {
+      max-width: 90%;
+      margin-bottom: 15px;
+  }
+}
+
+/* Small Devices (Mobile, 768px and below) */
+@media (max-width: 768px) {
+  /* Navigation */
+  .navbar-nav .nav-link {
+      font-size: 13px;
+      padding: 6px 15px;
+  }
+
+  /* Subscription form */
+  .subscription-form {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .subscription-text {
+      text-align: center;
+      padding: 0 0 10px;
+  }
+
+  .email-input {
+      width: 90%;
+      margin-bottom: 15px;
+  }
+
+  .sign-up, .close-updates {
+      margin: 10px 0;
+  }
+
+  /* Values Section */
+  .values-cards-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .value-card {
+      width: 90%;
+      margin-bottom: 15px;
+  }
+
+  /* Story Section */
+  .our-story-container {
+      padding: 30px 15px;
+  }
+
+  .our-story-text, .our-story-image {
+      flex-basis: 100%;
+  }
+
+  .our-story-image img {
+      max-width: 100%;
+  }
+
+  /* Founder Section */
+  .founder-section {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      padding: 40px 15px;
+  }
+
+  .founder-image, .founder-text {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+  }
+
+  .founder-image img {
+      max-width: 100%;
+  }
+
+  /* Leadership Section */
+  .leadership-members {
+      grid-template-columns: 1fr;
+  }
+
+  .leadership-member img {
+      max-width: 80%;
+  }
+  .leadership-members h3{
+    font-weight: bold;
+  }
+
+  /* Footer */
+  .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+}
