@@ -1,285 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaQuery.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Liu — Computer Science Graduate | Software, DevOps &amp; IT</title>
+  <meta name="description" content="Ryan Liu is a Computer Science graduate with experience across software development, IT operations, DevOps, and business banking. Explore his projects and experience." />
+  <link rel="canonical" href="https://liuryan.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ryan Liu — Computer Science Graduate | Software, DevOps &amp; IT" />
+  <meta property="og:description" content="Computer Science graduate with experience across software development, IT operations, DevOps, and business banking." />
+  <meta property="og:url" content="https://liuryan.com/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ryan Liu — Computer Science Graduate | Software, DevOps &amp; IT" />
+  <meta name="twitter:description" content="Computer Science graduate with experience across software development, IT operations, DevOps, and business banking." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1a1e'/%3E%3Ctext x='32' y='44' font-family='Arial, sans-serif' font-size='34' font-weight='700' fill='%23ffffff' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <nav id="desktop-nav">
-      <div class="logo">Ryan Liu</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Ryan Liu</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-        <div class="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="title">Ryan Liu</h1>
-            <p class="section_text_p2">4th Year Computer Science Student</p>
-            <div class="btn-container">
-                <button class="btn btn-color2" onclick="window.open('./Files/Ryan_Liu_Resume_09:11:24.pdf')">Download CV</button>
-                <button class="btn btn-color1" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./Files/linkedin.png" alt="linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ryan-liu-801a30277/'">
-                <img src="./Files/github.png" alt="github profile" class="icon" onclick="location.href='https://github.com/Rryan0613'">
-            </div>
-        </div>
-        <div class="section_pic-container">
-            <img src="./Files/Ryan.png" alt="ryan liu profile picture">
-        </div>
-    </section>
-    <section id="about">
-        <p class="section_text_p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section_pic-container">
-            <img
-              src="./Files/AboutMe.png"
-              alt="Profile picture"
-              class="about-pic"
-            />
-          </div>
-          <div class="about-details-container">
-            <div class="about-containers">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-            <div class="details-container1">
-                <img src="./Files/experience.jpeg" alt="Experience icon" class="icon"/>
-                <h3>Experience</h3>
-                <p>1 Year <br />Computer Systems Analyst / IT Co-op <br> w/ Canadian Musicians Co-operative</p>
-                <div class="layer">
-                    <p>
-                        Developed and maintained membership frontend functionalities for user account creation, membership, and auto-renewal reminders. 
-                        <br><br> 
-                        Designed visually appealing and user-friendly webpages using HTML and CSS for the home page, artist page, and others with ONVIVA. 
-                        <br> <br> 
-                        Managed Google Workspace drives, ensuring data organization, accessibility, and resolving technical issues.
-                    </p>
-                </div>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#hero" class="nav-logo">Ryan Liu</a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-eyebrow">Computer Science Graduate</p>
+          <h1 class="hero-title">Ryan Liu</h1>
+          <p class="hero-role">
+            Computer Science graduate working across software development,
+            IT operations, DevOps, and business banking — with a focus on
+            troubleshooting, automation, and building things that hold up
+            under real use.
+          </p>
+
+          <div class="hero-actions">
+            <div class="btn-row">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-secondary" href="./Files/Ryan_Liu_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
             </div>
-              <div class="details-container">
-                <img
-                  src="./Files/education.png"
-                  alt="Education icon"
-                  class="icon"
-                />
-                <h3>Education</h3>
-                <p>University of Ontario Institute of Technology <br>B.Sc. Bachelors Degree<br>09/2021 – Expected 05/2025 <br></p>
-                
-              </div>
-            </div>
-            <div class="text-container">
-              <p>
-                I’m a senior Computer Science student at Ontario Tech University in Toronto with a passion for innovation and exploring new technologies. My goal is to apply my skills to create impactful solutions and contribute to transformative industries.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src="./Files/downarrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
-      <section id="experience">
-        <!-- <p class="section_text_p1"></p> -->
-        <h1 class="title">Skills</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <div class="article-container">
-                <article>
-                  <div>
-                    <h3>HTML</h3>
-                    
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>CSS</h3>
-                    
-                  </div>
-                </article>
-                <article>
-                  <div>
-                    <h3>C</h3>
-                   
-                  </div>
-                </article>
-                <article>
-                    <div>
-                      <h3>C++</h3>
-                      
-                    </div>
-                  </article>
-                <article>
-                  <div>
-                    <h3>JavaScript</h3>
-                    
-                  </div>
-                </article>
-                <article>
-                    <div>
-                      <h3>Java</h3>
-                      
-                    </div>
-                  </article>
-                <article>
-                    <div>
-                      <h3>Python</h3>
-                      
-                    </div>
-                  </article>
-                <article>
-                    <div>
-                      <h3>AWS</h3>
-                      
-                    </div>
-                </article>
-              </div>
+            <div class="social-row">
+              <a class="social-link" href="https://github.com/Rryan0613" target="_blank" rel="noopener" aria-label="GitHub profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.44-2.7 5.42-5.27 5.7.42.36.78 1.07.78 2.15v3.19c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+              </a>
+              <a class="social-link" href="https://www.linkedin.com/in/ryan-liu-801a30277/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+              </a>
             </div>
           </div>
         </div>
-        <img
-          src="./Files/downarrow.png"
-          alt="Arrow icon"
-          class="arrow1 icon1"
-          onclick="location.href='./#projects'"/>
-      </section>
+
+        <div class="hero-photo">
+          <img src="./Files/Ryan.png" alt="Portrait of Ryan Liu" width="1080" height="1080" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title">A common thread across different rooms</h2>
+        </div>
+
+        <div class="about-copy reveal">
+          <p>
+            I'm a Computer Science graduate from Ontario Tech University
+            whose work has moved between software development, IT
+            operations, DevOps, and business banking. Each role has looked
+            different on the surface — writing an API, resolving a helpdesk
+            ticket, configuring a CI/CD pipeline, or walking a client through
+            a fraud concern on the phone — but the underlying work is the
+            same: understand how the system actually behaves, find the root
+            cause when it doesn't, and communicate the fix clearly.
+          </p>
+        </div>
+
+        <div class="about-points">
+          <div class="about-point reveal">
+            <h3>Troubleshooting &amp; investigation</h3>
+            <p>Tracing issues back to their source, whether in code, infrastructure, or an account.</p>
+          </div>
+          <div class="about-point reveal">
+            <h3>Automation &amp; systems thinking</h3>
+            <p>Reducing repeat work with scripting, CI/CD, and process improvements.</p>
+          </div>
+          <div class="about-point reveal">
+            <h3>Clear communication</h3>
+            <p>Documenting decisions and explaining solutions to technical and non-technical audiences alike.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 class="section-title">Professional Experience</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <div>
+                <span class="timeline-org">BMO</span>
+                <div class="timeline-role">Business Banking Specialist</div>
+              </div>
+              <span class="timeline-dates">June 2026 – Present</span>
+            </div>
+            <ul>
+              <li>Support business banking clients in a high-volume contact-centre environment, investigating accounts to resolve transaction, digital-banking, and service issues.</li>
+              <li>Troubleshoot online and mobile banking problems in real time and handle fraud and security inquiries under authentication, privacy, and compliance procedures.</li>
+              <li>Document interactions and escalate accurately while balancing service quality with sales and call-handling expectations.</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <div>
+                <span class="timeline-org">Wouessi Inc.</span>
+                <div class="timeline-role">Software Developer / DevOps Engineer</div>
+              </div>
+              <span class="timeline-dates">August 2025 – November 2025</span>
+            </div>
+            <ul>
+              <li>Built GET APIs to surface job and employee-status data for core workflows, with added error handling and safer fetch flows.</li>
+              <li>Introduced global loading states to improve perceived performance during API calls.</li>
+              <li>Configured Jenkins CI/CD pipelines to automate builds and deployments and reduce release errors.</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <div>
+                <span class="timeline-org">PlayForever</span>
+                <div class="timeline-role">Web Developer</div>
+              </div>
+              <span class="timeline-dates">March 2024 – August 2024</span>
+            </div>
+            <ul>
+              <li>Redesigned the organization's public website with a responsive layout and improved navigation.</li>
+              <li>Contributed to measurable gains in traffic, program sign-ups, and engagement within three months of launch.</li>
+            </ul>
+            <a class="link-arrow" href="./PlayForeverDemo/home/index.html" target="_blank" rel="noopener">
+              View Website Demo
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 8h10m0 0L9 4m4 4L9 12"/></svg>
+            </a>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-head">
+              <div>
+                <span class="timeline-org">Canadian Musicians Co-operative</span>
+                <div class="timeline-role">IT Team</div>
+              </div>
+              <span class="timeline-dates">September 2023 – March 2024</span>
+            </div>
+            <ul>
+              <li>Resolved 50+ helpdesk requests across departments, closing 9 in 10 issues on first contact.</li>
+              <li>Automated Active Directory and Azure AD account provisioning with PowerShell for new-employee onboarding.</li>
+              <li>Built a Confluence troubleshooting knowledge base and tracked recurring hardware failures through ServiceNow.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
     <section id="projects">
-        <p class="section_text_p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./Files/Project11.png"
-                  alt="Project 1"
-                  class="project-img"/>
-              </div>
-              <h2 class="experience-sub-title project-title">Auto+</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Rryan0613/AutoApp'">
-                  Github
-                </button>
-                <!-- <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'">
-                  Live Demo
-                </button> -->
-              </div>
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section-title">Selected Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-card-head">
+              <h3 class="project-name">RSB</h3>
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./Files/Project2.png"
-                  alt="Project 2"
-                  class="project-img1"/>
-              </div>
-              <h2 class="experience-sub-title project-title">Hotel Management</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Jathushan0130/HotelManagementProject'">
-                  Github
-                </button>
-                <!-- <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/'">
-                  Live Demo
-                </button> -->
-              </div>
+            <p class="project-category">Sports Analytics &amp; Probabilistic Forecasting System</p>
+            <p class="project-desc">
+              An actively developed quantitative sports-analysis platform
+              built around probabilistic modeling, Monte Carlo simulation,
+              backtesting, and data validation — with a pytest suite that
+              runs automatically on every change via GitHub Actions.
+            </p>
+            <ul class="tag-list">
+              <li class="tag">Python</li>
+              <li class="tag">Monte Carlo Simulation</li>
+              <li class="tag">Backtesting</li>
+              <li class="tag">pytest</li>
+              <li class="tag">GitHub Actions</li>
+              <li class="tag">SQLite</li>
+            </ul>
+            <div class="project-links">
+              <a class="link-arrow" href="https://github.com/Rryan0613/RSB" target="_blank" rel="noopener">
+                GitHub
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 8h10m0 0L9 4m4 4L9 12"/></svg>
+              </a>
             </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./Files/PlayForeverLogo.jpg"
-                  alt="Project 3"
-                  class="project-img"/>
+          </article>
+
+          <div class="project-others">
+            <article class="project-card reveal">
+              <div class="project-card-head">
+                <h3 class="project-name">Auto+</h3>
               </div>
-              <h2 class="experience-sub-title project-title">PlayForever Website</h2>
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/Jathushan0130/playforever'">
-                  Github
-                </button>
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="window.open('PlayForeverDemo/home/index.html', '_blank')">
-                  Live Demo
-                </button>
+              <p class="project-category">Team Project · Mobile</p>
+              <p class="project-desc">
+                A collaborative Flutter marketplace app for browsing and
+                posting vehicle listings, with Google Sign-In authentication,
+                Cloud Firestore data, and Firebase Storage image uploads.
+              </p>
+              <ul class="tag-list">
+                <li class="tag">Flutter</li>
+                <li class="tag">Dart</li>
+                <li class="tag">Firebase Auth</li>
+                <li class="tag">Cloud Firestore</li>
+                <li class="tag">Firebase Storage</li>
+              </ul>
+              <div class="project-links">
+                <a class="link-arrow" href="https://github.com/Rryan0613/AutoApp" target="_blank" rel="noopener">
+                  GitHub
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 8h10m0 0L9 4m4 4L9 12"/></svg>
+                </a>
               </div>
-            </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card-head">
+                <h3 class="project-name">Hotel Management System</h3>
+              </div>
+              <p class="project-category">Team Project</p>
+              <p class="project-desc">
+                A collaborative hotel-management application for customer,
+                room, booking, and service workflows. Contributed the
+                controller layer coordinating booking, customer, room, and
+                service operations.
+              </p>
+              <ul class="tag-list">
+                <li class="tag">Java</li>
+                <li class="tag">Hibernate</li>
+                <li class="tag">H2</li>
+                <li class="tag">Maven</li>
+              </ul>
+              <div class="project-links">
+                <a class="link-arrow" href="https://github.com/Jathushan0130/HotelManagementProject" target="_blank" rel="noopener">
+                  Team Repository
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 8h10m0 0L9 4m4 4L9 12"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card reveal">
+              <div class="project-card-head">
+                <h3 class="project-name">Banking System</h3>
+              </div>
+              <p class="project-category">Academic Team Project · CSCI 3060U</p>
+              <p class="project-desc">
+                A dual-component banking system with a console front end for
+                transaction processing and a backend for master-account
+                management, validated by a Bash-based automated test suite.
+              </p>
+              <ul class="tag-list">
+                <li class="tag">Java</li>
+                <li class="tag">Python</li>
+                <li class="tag">Bash</li>
+              </ul>
+              <div class="project-links">
+                <a class="link-arrow" href="https://github.com/Rryan0613/2RES-BankingProject-CSCI3060U" target="_blank" rel="noopener">
+                  GitHub
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 8h10m0 0L9 4m4 4L9 12"/></svg>
+                </a>
+              </div>
+            </article>
           </div>
         </div>
-        <img
-          src="./Files/downarrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#contact'"/>
-      </section>
-      <section id="contact">
-        <!-- <p class="section_text_p1">Get in Touch</p> -->
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-          <div class="contact-info-container">
-            <img
-              src="./Files/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"/>
-            <p><a href="mailto:Ryliu.0613@gmail.com">Rliu.0613@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./Files/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"/>
-            <p><a href="https://www.linkedin.com/in/ryan-liu-801a30277/">LinkedIn</a></p>
-          </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section-title">Skills</h2>
         </div>
-      </section>
-      <footer>
-        <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Development</h3>
+            <ul class="tag-list">
+              <li class="tag">Python</li>
+              <li class="tag">Java</li>
+              <li class="tag">JavaScript</li>
+              <li class="tag">SQL</li>
+              <li class="tag">HTML &amp; CSS</li>
+              <li class="tag">React</li>
+              <li class="tag">REST APIs</li>
             </ul>
           </div>
-        </nav>
-      </footer>
-      <script src="script.js"></script>
+
+          <div class="skill-group reveal">
+            <h3>Infrastructure &amp; Automation</h3>
+            <ul class="tag-list">
+              <li class="tag">Git</li>
+              <li class="tag">Jenkins</li>
+              <li class="tag">PowerShell</li>
+              <li class="tag">Bash</li>
+              <li class="tag">CI/CD</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>IT &amp; Enterprise</h3>
+            <ul class="tag-list">
+              <li class="tag">Windows 10/11</li>
+              <li class="tag">Microsoft 365</li>
+              <li class="tag">Active Directory</li>
+              <li class="tag">OneDrive</li>
+              <li class="tag">SharePoint</li>
+              <li class="tag">ServiceNow</li>
+              <li class="tag">Confluence</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Mobile &amp; Cloud</h3>
+            <ul class="tag-list">
+              <li class="tag">Flutter</li>
+              <li class="tag">Dart</li>
+              <li class="tag">Firebase Authentication</li>
+              <li class="tag">Cloud Firestore</li>
+              <li class="tag">Firebase Storage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Education</p>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="education-card reveal">
+          <div>
+            <div class="education-org">Ontario Tech University</div>
+            <p class="education-degree">BSc in Computer Science</p>
+          </div>
+          <span class="education-year">2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+
+        <div class="contact-card reveal">
+          <a class="contact-row" href="mailto:rliu.0613@gmail.com">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path stroke="currentColor" stroke-width="1.6" d="M3 6.5A1.5 1.5 0 0 1 4.5 5h15A1.5 1.5 0 0 1 21 6.5v11A1.5 1.5 0 0 1 19.5 19h-15A1.5 1.5 0 0 1 3 17.5v-11Z"/><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="m4 6.5 8 6.5 8-6.5"/></svg>
+            rliu.0613@gmail.com
+          </a>
+          <a class="contact-row" href="https://www.linkedin.com/in/ryan-liu-801a30277/" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+            LinkedIn
+          </a>
+          <a class="contact-row" href="https://github.com/Rryan0613" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2.17c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.44-2.7 5.42-5.27 5.7.42.36.78 1.07.78 2.15v3.19c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-meta">&copy; <span id="year"></span> Ryan Liu</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
